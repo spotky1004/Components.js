@@ -23,7 +23,7 @@ const elementBuilder = new ElementBuilder(/** @type {const} */ ({
  * @template [T=Options]
  * @extends {ComponentBase<DefaultValue, T>}
  */
-class FormBundle extends ComponentBase {
+class Components extends ComponentBase {
   /**
    * @typedef {T["forms"]} Forms
    * @typedef {{ [K in keyof Forms]-? : Forms[K]["defaultValue"] }} DefaultValue 
@@ -82,8 +82,8 @@ class FormBundle extends ComponentBase {
       forms[key] = forms[key].clone();
     }
     rawOptions.forms = forms;
-    return new FormBundle(rawOptions);
+    return new Components(rawOptions);
   }
 }
 
-export default FormBundle;
+export default Components;

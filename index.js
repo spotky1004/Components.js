@@ -1,12 +1,12 @@
 import Input from "./Components/Input.js";
 import Select from "./Components/Select.js";
-import FormBundle from "./Components/FormBundle.js";
+import Components from "./Components/Components.js";
 import Value from "./Components/Value.js";
 
 /** @type {HTMLDivElement} */
 const main = document.getElementById("main");
 
-const valueInput = new FormBundle(/** @type {const} */ ({
+const valueInput = new Components(/** @type {const} */ ({
   forms: {
     type: new Select({
       name: "Type:",
