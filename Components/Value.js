@@ -31,7 +31,7 @@ const elementBuilder = new ElementBuilder(/** @type {const} */ ({
 /**
  * @extends {ComponentBase<Options["defaultValue"], Options>}
  */
-class Input extends ComponentBase {
+class Value extends ComponentBase {
   /**
    * @param {Options} options 
    */
@@ -70,4 +70,4 @@ class Input extends ComponentBase {
   }
 }
 
-export default Input;
+export default Value;
